@@ -9,6 +9,8 @@
 #define MAX_DIE 20
 #define MAX_STEPS 10000
 #define MAX_JUMPS 100
+#define RED "\x1b[31m"
+#define RESET "\x1b[0m"
 
 typedef struct {
     int from;
@@ -97,6 +99,27 @@ void build_graph() {
     }
 }
 
+/*void printgraph() {
+    printf("\n++++ Board Graph Visualization ++++\n");
+    for (int i = 0; i < board_size; ++i) {
+        printf("Square %d:\n", i);
+        for (int d = 0; d < die_sides; ++d) {
+            int destination = graph[i].transitions[d];
+            printf("  On roll %d → %d", d + 1, destination);
+
+            // Optional: mark jump types
+            if (destination < i + d + 1)
+                printf(" (Snake)");
+            else if (destination > i + d + 1)
+                printf(" (Ladder)");
+
+            printf("\n");
+        }
+    }
+} */ //Commented out for now, maybe used in future usage. Just too bloated at the moment with the simulation showing.
+
+
+
 void simulate_game() {
     int pos = 0, steps = 0;
     int roll_sequence[MAX_STEPS];
@@ -137,11 +160,11 @@ void run_simulations() {
 }
 
 void print_stats() {
-    printf("\n++++ Simulation Statistics ++++\n");
+    printf(RED"\n --->Simulation Stats<---\n"RESET);
     printf("Board size: %d, Amount of Die sides: %d\n", board_size, die_sides);
     printf("Number of Simulations run: %d\n", simulations);
     printf("Number of Wins: %d (%.2f%%)\n", total_wins, 100.0 * total_wins / simulations);
-    printf("\n++++ Dice Roll Statistics ++++\n");
+    printf(RED"\n --->Dice Roll Statistics<---\n"RESET);
     if (total_wins > 0) {
         printf("Average rolls to win the game: %.2f\n", (double)total_rolls / total_wins);
         printf("Shortest win in this simulation in %d rolls: ", min_rolls);
@@ -151,15 +174,15 @@ void print_stats() {
         printf("\n");
     }
 
-    printf("\n++++ Snakes and Ladders Usage Statistics ++++");
+    printf(RED"\n --->Snakes / Ladders Stats<---\n"RESET);
 
-    printf("\nSnake Usage:\n");
+    printf("Snake Usage:\n");
     for (int i = 0; i < board_size; ++i) {
         if (snake_usage[i] > 0)
             printf("  Snake at field %d used %d times in total\n", i, snake_usage[i]);
     }
 
-    printf("\nLadder Usage:\n");
+    printf("Ladder Usage:\n");
     for (int i = 0; i < board_size; ++i) {
         if (ladder_usage[i] > 0)
             printf("  Ladder at field %d used %d times in total\n", i, ladder_usage[i]);
@@ -237,7 +260,7 @@ void parse_args(int argc, char* argv[]) {
     }
 
     if ((num_snakes == 0 && num_ladders == 0) || SnakeLadderErrorFlag) {
-        printf("Error: Snakes / Ladders provided are invalid. Terminating Simulation.\n");
+        printf("Error: Snakes and or Ladders provided are invalid. Terminating Simulation.\n");
         exit(1);
     }
 
@@ -250,19 +273,19 @@ void parse_args(int argc, char* argv[]) {
 int main(int argc, char* argv[]) {
     srand(time(NULL));
 
-    print_slow("Arguments are being parsed", 50);
-    dots(3, 300);
+    print_slow("Command Line Interface Inputs are being processed", 50);
+    dots(5, 300);
     parse_args(argc, argv);
-    print_slow("Parsed arguments:\n", 40);
+    print_slow("Processed arguments:\n", 40);
 
     char buffer[100];
-    sprintf(buffer, "  -> Board size: %d\n", board_size);
+    sprintf(buffer, "  -> Board size (Amount of Squares): %d\n", board_size);
     print_slow(buffer, 30);
-    sprintf(buffer, "  -> Die sides: %d\n", die_sides);
+    sprintf(buffer, "  -> Dice side amount (Amount of Dice Sides): %d\n", die_sides);
     print_slow(buffer, 30);
-    sprintf(buffer, "  -> Max steps: %d\n", max_steps);
+    sprintf(buffer, "  -> Maximum number of steps (Number of allowed rolls): %d\n", max_steps);
     print_slow(buffer, 30);
-    sprintf(buffer, "  -> Simulations: %d\n", simulations);
+    sprintf(buffer, "  -> Amount of Simulations to run: %d\n", simulations);
     print_slow(buffer, 30);
     print_slow("Snakes:\n", 30);
     for (int i = 0; i < num_snakes; ++i) {
@@ -275,16 +298,17 @@ int main(int argc, char* argv[]) {
         print_slow(buffer, 20);
     }
 
-    print_slow("Board graph is being printed", 50);
-    dots(3, 300);
+    print_slow("Assembling Graph", 50);
+    dots(5, 300);
     build_graph();
 
-    print_slow("Running the Simulation", 50);
-    dots(3, 300);
+    print_slow("Running Simulations", 50);
+    dots(5, 300);
     run_simulations();
+    //printgraph();
 
-    print_slow("Gathering Simulation results", 50);
-    dots(3, 300);
+    print_slow("Retrieving Simulation Results and Values", 50);
+    dots(5, 300);
     print_stats();
 
     return 0;
