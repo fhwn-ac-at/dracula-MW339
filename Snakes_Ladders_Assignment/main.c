@@ -9,8 +9,11 @@
 #define MAX_DIE 20
 #define MAX_STEPS 10000
 #define MAX_JUMPS 100
+
+// Colors for prints
 #define RED "\x1b[31m"
 #define RESET "\x1b[0m"
+#define GREEN "\x1b[32m"
 
 typedef struct {
     int from;
@@ -99,26 +102,6 @@ void build_graph() {
     }
 }
 
-/*void printgraph() {
-    printf("\n++++ Board Graph Visualization ++++\n");
-    for (int i = 0; i < board_size; ++i) {
-        printf("Square %d:\n", i);
-        for (int d = 0; d < die_sides; ++d) {
-            int destination = graph[i].transitions[d];
-            printf("  On roll %d → %d", d + 1, destination);
-
-            // Optional: mark jump types
-            if (destination < i + d + 1)
-                printf(" (Snake)");
-            else if (destination > i + d + 1)
-                printf(" (Ladder)");
-
-            printf("\n");
-        }
-    }
-} */ //Commented out for now, maybe used in future usage. Just too bloated at the moment with the simulation showing.
-
-
 
 void simulate_game() {
     int pos = 0, steps = 0;
@@ -159,6 +142,24 @@ void run_simulations() {
         simulate_game();
 }
 
+/* void printgraph() {
+    printf(" --->Board Graph Visual<---\n");
+    for (int i = 0; i < board_size; ++i) {
+        printf("Square %d:\n", i);
+        for (int d = 0; d < die_sides; ++d) {
+            int destination = graph[i].transitions[d];
+            printf("  On roll %d → %d", d + 1, destination);
+
+            if (destination < i + d + 1)
+                printf(" (Snake)");
+            else if (destination > i + d + 1)
+                printf(" (Ladder)");
+
+            printf("\n");
+        }
+    }
+} */ //Commented out for now, maybe used in future usage. Just too bloated at the moment with the simulation showing.
+
 void print_stats() {
     printf(RED"\n --->Simulation Stats<---\n"RESET);
     printf("Board size: %d, Amount of Die sides: %d\n", board_size, die_sides);
@@ -179,13 +180,13 @@ void print_stats() {
     printf("Snake Usage:\n");
     for (int i = 0; i < board_size; ++i) {
         if (snake_usage[i] > 0)
-            printf("  Snake at field %d used %d times in total\n", i, snake_usage[i]);
+            printf("  Snake at field " GREEN"%d "RESET "used "GREEN"%d "RESET "times in total\n", i, snake_usage[i]);
     }
 
     printf("Ladder Usage:\n");
     for (int i = 0; i < board_size; ++i) {
         if (ladder_usage[i] > 0)
-            printf("  Ladder at field %d used %d times in total\n", i, ladder_usage[i]);
+            printf("  Ladder at field " GREEN"%d "RESET "used " GREEN"%d "RESET "times in total\n", i, ladder_usage[i]);
     }
 }
 
