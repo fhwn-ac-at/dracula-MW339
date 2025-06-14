@@ -45,6 +45,7 @@ Ladders Used:
   >>> Ladder at field 11 used 2412 times
   >>> Ladder at field 20 used 1950 times
 
+-------------------------------------------------------------------------------------------------------------------------------------
 
 Simulation 2 Run 1: Board that is very Ladder heavy, with less Snakes
 Command: ./a.out --size 100 --sides 6 --steps 500 --runs 10000 --snakes 87 24 93 73 --ladders 2 90 4 50 10 60 22 80 30 70
@@ -94,6 +95,7 @@ Ladders Used:
   >>> Ladder at field 22 used 1219 times
   >>> Ladder at field 30 used 2591 times
 
+-------------------------------------------------------------------------------------------------------------------------------------
 
 Simulation 3 Run 1: Snake Heavy Board, hard to get through
 Commands: ./a.out --size 100 --sides 6 --steps 2000 --runs 10000 --snakes 98 1 90 2 80 3 70 4 60 5 --ladders 3 10 8 12
@@ -141,6 +143,8 @@ Snakes Used:
 Ladders Used:
   >>> Ladder at field 3 used 5755 times
   >>> Ladder at field 8 used 20049 times
+
+-------------------------------------------------------------------------------------------------------------------------------------
 
 Simulation 4 Run 1: Big Board, even bigger dice, fat rolls and very fast traversal (probably) + unpredictable
 
@@ -198,6 +202,8 @@ Ladders Used:
   >>> Ladder at field 550 used 1012 times
   >>> Ladder at field 610 used 943 times
   >>> Ladder at field 720 used 1060 times
+
+-------------------------------------------------------------------------------------------------------------------------------------
 
 Simulation 5 Run 1: Same Board as above, but with less steps allowed and less runs
 
