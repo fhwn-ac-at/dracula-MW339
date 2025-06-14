@@ -12,19 +12,19 @@ Program and Simulations are being run via CLI. Example CLI Input:
 * --snakes from1 to1 from2 to2 .....
 * --ladders from1 to1 from2 to2 .....
 
-## Stats that are shown after the games were simulated
+# Stats that are shown after the games were simulated
 
-# Simulation Stats
+## Simulation Stats
 CLI Inputs
 * Board Size
 * Dice Sides
 * Amount of Simulations that were run
 * Number of Wins in all Simulations
 
-# Dice Stats
+## Dice Stats
 * Average Rolls needed to win the game
 * Shortest Win in all Simulations that were run with the given CLI Arguments including the Rolls the Shortest Win had
 
-# Snakes / Ladders Stats
+## Snakes / Ladders Stats
 * Snakes that were used (Which position, and how many times)
 * Ladders that were used (Which position, and how many times)
