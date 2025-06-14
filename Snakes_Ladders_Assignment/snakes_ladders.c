@@ -117,8 +117,8 @@ void print_stats() {
     printf("Number of Wins: %d (%.2f%%)\n", total_wins, 100.0 * total_wins / simulations);
     printf(RED"\n --->Dice Stats<---\n"RESET);
     if (total_wins > 0) {
-        printf("Average rolls to win the game: %.2f\n", (double)total_rolls / total_wins);
-        printf("Shortest win in this simulation in %d rolls: ", min_rolls);
+        printf("Average rolls needed to win the game: %.2f\n", (double)total_rolls / total_wins);
+        printf("Shortest win in all Simulations that have been run took (%d) rolls: ", min_rolls);
         for (int i = 0; i < min_sequence_len; ++i) {
             printf("%d ", min_sequence[i]);
         }
@@ -128,12 +128,12 @@ void print_stats() {
     printf("Snakes Used:\n");
     for (int i = 0; i < board_size; ++i) {
         if (snake_usage[i] > 0)
-            printf("  >>> Snake at field " GREEN"%d "RESET "used "GREEN"%d "RESET" times\n", i, snake_usage[i]);
+            printf("  >>> Snake at field " GREEN"%d "RESET "used "GREEN"%d "RESET"times\n", i, snake_usage[i]);
     }
     printf("Ladders Used:\n");
     for (int i = 0; i < board_size; ++i) {
         if (ladder_usage[i] > 0)
-            printf("  >>> Ladder at field " GREEN"%d "RESET "used " GREEN"%d "RESET " times\n", i, ladder_usage[i]);
+            printf("  >>> Ladder at field " GREEN"%d "RESET "used " GREEN"%d "RESET "times\n", i, ladder_usage[i]);
     }
 }
 
@@ -205,3 +205,4 @@ void parse_args(int argc, char* argv[]) {
     min_sequence = malloc(max_steps * sizeof(int));
     if (!min_sequence) { fprintf(stderr, RED "Malloc failed on Steps.\n" RESET); exit(EXIT_FAILURE); }
 }
+
