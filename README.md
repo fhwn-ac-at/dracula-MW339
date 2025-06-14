@@ -5,12 +5,12 @@ Program and Simulations are being run via CLI. Example CLI Input:
 
 # Commands
 
--> --size
--> --sides
--> --steps
--> --runs
--> --snakes from1 to1 from2 to2 .....
--> --ladders from1 to1 from2 to2 .....
+* --size
+* --sides
+* --steps
+* --runs
+* --snakes from1 to1 from2 to2 .....
+* --ladders from1 to1 from2 to2 .....
 
 ## Stats that are shown after the games were simulated
 
