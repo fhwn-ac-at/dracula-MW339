@@ -19,8 +19,8 @@ typedef struct {
 } Node;
 
 extern int board_size, dice_sides, max_steps, simulations;
-extern Jump* snakes, *ladders;
-extern int num_snakes, num_ladders; //array for snakes / ladders jumps
+extern Jump* snakes, *ladders; //array for snakes / ladders jumps
+extern int num_snakes, num_ladders; 
 extern Node* graph;
 extern int* snake_usage, *ladder_usage;
 extern int total_rolls, total_wins, min_rolls, *min_sequence, min_sequence_len;
