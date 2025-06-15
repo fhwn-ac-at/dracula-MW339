@@ -128,12 +128,12 @@ void print_stats() {
     printf("Snakes Used:\n");
     for (int i = 0; i < board_size; ++i) {
         if (snake_usage[i] > 0)
-            printf("  >>> Snake at field " GREEN"%d "RESET "used "GREEN"%d "RESET"times\n", i, snake_usage[i]);
+            printf(">>> Snake starting on square " GREEN"%d "RESET "has been used "GREEN"%d "RESET"times in total\n", i, snake_usage[i]);
     }
     printf("Ladders Used:\n");
     for (int i = 0; i < board_size; ++i) {
         if (ladder_usage[i] > 0)
-            printf("  >>> Ladder at field " GREEN"%d "RESET "used " GREEN"%d "RESET "times\n", i, ladder_usage[i]);
+            printf(">>> Ladder starting on square " GREEN"%d "RESET "has been used " GREEN"%d "RESET "times in total\n", i, ladder_usage[i]);
     }
 }
 
