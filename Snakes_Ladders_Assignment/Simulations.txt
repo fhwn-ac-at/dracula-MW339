@@ -23,15 +23,15 @@ Shortest win in all Simulations that have been run took (16) rolls: 6 5 6 6 5 6 
 
  --->Snakes / Ladders Stats<---
 Snakes Used:
-  >>> Snake at field 25 used 1942 times
-  >>> Snake at field 52 used 4173 times
-  >>> Snake at field 70 used 8499 times
-  >>> Snake at field 98 used 11177 times
+>>> Snake starting on square 25 has been used 1942 times in total
+>>> Snake starting on square 52 has been used 4173 times in total
+>>> Snake starting on square 70 has been used 8499 times in total
+>>> Snake starting on square 98 has been used 11177 times in total
 Ladders Used:
-  >>> Ladder at field 3 used 2638 times
-  >>> Ladder at field 5 used 3021 times
-  >>> Ladder at field 11 used 2373 times
-  >>> Ladder at field 20 used 2019 times
+>>> Ladder starting on square 3 has been used 2638 times in total
+>>> Ladder starting on square 5 has been used 3021 times in total
+>>> Ladder starting on square 11 has been used 2373 times in total
+>>> Ladder starting on square 20 has been used 2019 times in total
 
 Simulation 1 Run 2:
  --->Simulation Stats<---
@@ -45,15 +45,16 @@ Shortest win in all Simulations that have been run took (18) rolls: 3 4 3 6 4 4 
 
  --->Snakes / Ladders Stats<---
 Snakes Used:
-  >>> Snake at field 25 used 1960 times
-  >>> Snake at field 52 used 4083 times
-  >>> Snake at field 70 used 8655 times
-  >>> Snake at field 98 used 11201 times
+>>> Snake starting on square 25 has been used 1960 times in total
+>>> Snake starting on square 52 has been used 4083 times in total
+>>> Snake starting on square 70 has been used 8655 times in total
+>>> Snake starting on square 98 has been used 11201 times in total
+
 Ladders Used:
-  >>> Ladder at field 3 used 2570 times
-  >>> Ladder at field 5 used 3015 times
-  >>> Ladder at field 11 used 2412 times
-  >>> Ladder at field 20 used 1950 times
+>>> Ladder starting on square 3 has been used 2570 times in total
+>>> Ladder starting on square 5 has been used 3015 times in total
+>>> Ladder starting on square 11 has been used 2412 times in total
+>>> Ladder starting on square 20 has been used 1950 times in total
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
@@ -72,14 +73,15 @@ Shortest win in all Simulations that have been run took (3) rolls: 2 4 5
 
  --->Snakes / Ladders Stats<---
 Snakes Used:
-  >>> Snake at field 87 used 4568 times
-  >>> Snake at field 93 used 3410 times
+>>> Snake starting on square 87 has been used 4568 times in total
+>>> Snake starting on square 93 has been used 3410 times in total
+
 Ladders Used:
-  >>> Ladder at field 2 used 1918 times
-  >>> Ladder at field 4 used 2275 times
-  >>> Ladder at field 10 used 1567 times
-  >>> Ladder at field 22 used 1212 times
-  >>> Ladder at field 30 used 2521 times
+>>> Ladder starting on square 2 has been used 1918 times in total
+>>> Ladder starting on square 4 has been used 2275 times in total
+>>> Ladder starting on square 10 has been used 1567 times in total
+>>> Ladder starting on square 22 has been used 1212 times in total
+>>> Ladder starting on square 30 has been used 2521 times in total
 
 
 Simulation 2 Run 2: 
@@ -96,14 +98,14 @@ Shortest win in all Simulations that have been run took (3) rolls: 2 6 3
 
  --->Snakes / Ladders Stats<---
 Snakes Used:
-  >>> Snake at field 87 used 4511 times
-  >>> Snake at field 93 used 3362 times
+>>> Snake starting on square 87 has been used 4511 times in total
+>>> Snake starting on square 93 has been used 3362 times in total
 Ladders Used:
-  >>> Ladder at field 2 used 1967 times
-  >>> Ladder at field 4 used 2212 times
-  >>> Ladder at field 10 used 1576 times
-  >>> Ladder at field 22 used 1219 times
-  >>> Ladder at field 30 used 2591 times
+>>> Ladder starting on square 2 has been used 1967 times in total
+>>> Ladder starting on square 4 has been used 2212 times in total
+>>> Ladder starting on square 10 has been used 1576 times in total
+>>> Ladder starting on square 22 has been used 1219 times in total
+>>> Ladder starting on square 30 has been used 2591 times in total
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
@@ -122,14 +124,15 @@ Shortest win in all Simulations that have been run took (20) rolls: 6 5 4 3 6 6 
 
  --->Snakes / Ladders Stats<---
 Snakes Used:
-  >>> Snake at field 60 used 23491 times
-  >>> Snake at field 70 used 16637 times
-  >>> Snake at field 80 used 11933 times
-  >>> Snake at field 90 used 8452 times
-  >>> Snake at field 98 used 11262 times
+>>> Snake starting on square 60 has been used 23491 times in total
+>>> Snake starting on square 70 has been used 16637 times in total
+>>> Snake starting on square 80 has been used 11933 times in total
+>>> Snake starting on square 90 has been used 8452 times in total
+>>> Snake starting on square 98 has been used 11262 times in total
+
 Ladders Used:
-  >>> Ladder at field 3 used 5815 times
-  >>> Ladder at field 8 used 20317 times
+>>> Ladder starting on square 3 has been used 5815 times in total
+>>> Ladder starting on square 8 has been used 20317 times in total
 
 Simulation 3 Run 2:
 
@@ -145,14 +148,14 @@ Shortest win in all Simulations that have been run took (21) rolls: 6 4 6 2 5 6 
 
  --->Snakes / Ladders Stats<---
 Snakes Used:
-  >>> Snake at field 60 used 23098 times
-  >>> Snake at field 70 used 16472 times
-  >>> Snake at field 80 used 11774 times
-  >>> Snake at field 90 used 8486 times
-  >>> Snake at field 98 used 10994 times
+>>> Snake starting on square 60 has been used 23098 times in total
+>>> Snake starting on square 70 has been used 16472 times in total
+>>> Snake starting on square 80 has been used 11774 times in total
+>>> Snake starting on square 90 has been used 8486 times in total
+>>> Snake starting on square 98 has been used 10994 times in total
 Ladders Used:
-  >>> Ladder at field 3 used 5755 times
-  >>> Ladder at field 8 used 20049 times
+>>> Ladder starting on square 3 has been used 5755 times in total
+>>> Ladder starting on square 8 has been used 20049 times in total
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
@@ -172,19 +175,20 @@ Shortest win in all Simulations that have been run took (45) rolls: 21 17 8 10 2
 
  --->Snakes / Ladders Stats<---
 Snakes Used:
-  >>> Snake at field 140 used 1267 times
-  >>> Snake at field 320 used 1000 times
-  >>> Snake at field 510 used 1172 times
-  >>> Snake at field 790 used 940 times
-  >>> Snake at field 850 used 893 times
-  >>> Snake at field 998 used 10002 times
+>>> Snake starting on square 140 has been used 1267 times in total
+>>> Snake starting on square 320 has been used 1000 times in total
+>>> Snake starting on square 510 has been used 1172 times in total
+>>> Snake starting on square 790 has been used 940 times in total
+>>> Snake starting on square 850 has been used 893 times in total
+>>> Snake starting on square 998 has been used 10002 times in total
+
 Ladders Used:
-  >>> Ladder at field 150 used 1230 times
-  >>> Ladder at field 300 used 1100 times
-  >>> Ladder at field 375 used 883 times
-  >>> Ladder at field 550 used 1018 times
-  >>> Ladder at field 610 used 919 times
-  >>> Ladder at field 720 used 1042 times
+>>> Ladder starting on square 150 has been used 1230 times in total
+>>> Ladder starting on square 300 has been used 1100 times in total
+>>> Ladder starting on square 375 has been used 883 times in total
+>>> Ladder starting on square 550 has been used 1018 times in total
+>>> Ladder starting on square 610 has been used 919 times in total
+>>> Ladder starting on square 720 has been used 1042 times in total
 
 
 Simulation 4 Run 2:
@@ -199,19 +203,19 @@ Shortest win in all Simulations that have been run took (43) rolls: 3 7 19 17 13
 
  --->Snakes / Ladders Stats<---
 Snakes Used:
-  >>> Snake at field 140 used 1274 times
-  >>> Snake at field 320 used 1006 times
-  >>> Snake at field 510 used 1069 times
-  >>> Snake at field 790 used 891 times
-  >>> Snake at field 850 used 848 times
-  >>> Snake at field 998 used 10172 times
+>>> Snake starting on square 140 has been used 1274 times in total
+>>> Snake starting on square 320 has been used 1006 times in total
+>>> Snake starting on square 510 has been used 1069 times in total
+>>> Snake starting on square 790 has been used 891 times in total
+>>> Snake starting on square 850 has been used 848 times in total
+>>> Snake starting on square 998 has been used 10172 times in total
 Ladders Used:
-  >>> Ladder at field 150 used 1210 times
-  >>> Ladder at field 300 used 1116 times
-  >>> Ladder at field 375 used 950 times
-  >>> Ladder at field 550 used 1012 times
-  >>> Ladder at field 610 used 943 times
-  >>> Ladder at field 720 used 1060 times
+>>> Ladder starting on square 150 has been used 1210 times in total
+>>> Ladder starting on square 300 has been used 1116 times in total
+>>> Ladder starting on square 375 has been used 950 times in total
+>>> Ladder starting on square 550 has been used 1012 times in total
+>>> Ladder starting on square 610 has been used 943 times in total
+>>> Ladder starting on square 720 has been used 1060 times in total
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
@@ -231,19 +235,19 @@ Shortest win in all Simulations that have been run took (48) rolls: 4 20 16 16 1
 
  --->Snakes / Ladders Stats<---
 Snakes Used:
-  >>> Snake at field 140 used 138 times
-  >>> Snake at field 320 used 106 times
-  >>> Snake at field 510 used 120 times
-  >>> Snake at field 790 used 95 times
-  >>> Snake at field 850 used 87 times
-  >>> Snake at field 998 used 947 times
+>>> Snake starting on square 140 has been used 138 times in total
+>>> Snake starting on square 320 has been used 106 times in total
+>>> Snake starting on square 510 has been used 120 times in total
+>>> Snake starting on square 790 has been used 95 times in total
+>>> Snake starting on square 850 has been used 87 times in total
+>>> Snake starting on square 998 has been used 947 times in total
 Ladders Used:
-  >>> Ladder at field 150 used 136 times
-  >>> Ladder at field 300 used 93 times
-  >>> Ladder at field 375 used 77 times
-  >>> Ladder at field 550 used 90 times
-  >>> Ladder at field 610 used 79 times
-  >>> Ladder at field 720 used 110 times
+>>> Ladder starting on square 150 has been used 136 times in total
+>>> Ladder starting on square 300 has been used 93 times in total
+>>> Ladder starting on square 375 has been used 77 times in total
+>>> Ladder starting on square 550 has been used 90 times in total
+>>> Ladder starting on square 610 has been used 79 times in total
+>>> Ladder starting on square 720 has been used 110 times in total
 
 
 Simulation 5 Run 2:
@@ -258,17 +262,17 @@ Shortest win in all Simulations that have been run took (54) rolls: 21 11 21 17 
 
  --->Snakes / Ladders Stats<---
 Snakes Used:
-  >>> Snake at field 140 used 122 times
-  >>> Snake at field 320 used 114 times
-  >>> Snake at field 510 used 87 times
-  >>> Snake at field 790 used 99 times
-  >>> Snake at field 850 used 90 times
-  >>> Snake at field 998 used 897 times
+>>> Snake starting on square 140 has been used 122 times in total
+>>> Snake starting on square 320 has been used 114 times in total
+>>> Snake starting on square 510 has been used 87 times in total
+>>> Snake starting on square 790 has been used 99 times in total
+>>> Snake starting on square 850 has been used 90 times in total
+>>> Snake starting on square 998 has been used 897 times in total
 Ladders Used:
-  >>> Ladder at field 150 used 120 times
-  >>> Ladder at field 300 used 111 times
-  >>> Ladder at field 375 used 87 times
-  >>> Ladder at field 550 used 94 times
-  >>> Ladder at field 610 used 91 times
-  >>> Ladder at field 720 used 96 times
+>>> Ladder starting on square 150 has been used 120 times in total
+>>> Ladder starting on square 300 has been used 111 times in total
+>>> Ladder starting on square 375 has been used 87 times in total
+>>> Ladder starting on square 550 has been used 94 times in total
+>>> Ladder starting on square 610 has been used 91 times in total
+>>> Ladder starting on square 720 has been used 96 times in total
 
