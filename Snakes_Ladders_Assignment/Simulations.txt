@@ -1,3 +1,13 @@
+## File for example Simulations that were run
+
+* Simulation 1: Simple Classic Game without Heavy Traps / Heavy Snakes to make the Board extremely hard.
+* Simulation 2: Game with lots of ladders to make the Board relatively easy to pass.
+* Simulation 3: Game with lots of Snakes to make it harder to pass.
+* Simulation 4: Big Board, and Big Dice.
+* Simulation 5: Same Board as Simulation 4, but with less Steps and Less Runs.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Simulation 1 Run 1: Classic Game without heavy traps or anything else.
 -> Command that was run: ./a.out --size 100 --sides 6 --steps 1000 --runs 10000 --snakes 98 54 70 55 52 42 25 2 --ladders 3 22 5 8 11 26 20 29
 
